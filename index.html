@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="calc.css">
+
+
+<div class="main">
+    <div class="cal">
+        <form action="">
+            <div class="res">
+               <input type="text" name="res" class="inp">
+            </div>
+            <div class="ms-4">
+                <input type="button" value="AC" class="btn btn-primary" onclick="res.value=''">
+                <input type="button" value="Del" class="btn btn-primary" onclick="res.value= res.value.slice(0,-1)">
+                <input type="button" value="%" class="btn btn-primary" onclick="res.value+='%'">
+                <input type="button" value="/" class="btn btn-primary" onclick="res.value+='/'">
+            </div>
+            <div class="ms-4">
+                <input type="button" value="7" class="btn btn-primary" onclick="res.value+='7'">
+                <input type="button" value="8" class="btn btn-primary" onclick="res.value+='8'">
+                <input type="button" value="9" class="btn btn-primary" onclick="res.value+='9'">
+                <input type="button" value="x" class="btn btn-primary" onclick="res.value+='*'">
+            </div>
+            <div class="ms-4">
+                <input type="button" value="4" class="btn btn-primary" onclick="res.value+='4'">
+                <input type="button" value="5" class="btn btn-primary" onclick="res.value+='5'">
+                <input type="button" value="6" class="btn btn-primary" onclick="res.value+='6'">
+                <input type="button" value="-" class="btn btn-primary" onclick="res.value+='-'">
+            </div>
+            <div class="ms-4">
+                <input type="button" value="1" class="btn btn-primary" onclick="res.value+='1'">
+                <input type="button" value="2" class="btn btn-primary" onclick="res.value+='2'">
+                <input type="button" value="3" class="btn btn-primary" onclick="res.value+='3'">
+                <input type="button" value="+" class="btn btn-primary" onclick="res.value+='+'">
+            </div>
+            <div class="ms-4">
+                <input type="button" value="0" class="btn btn-primary" onclick="res.value+='0'">
+                <input type="button" value="00" class="btn btn-primary" onclick="res.value+='00'">
+                <input type="button" value="." class="btn btn-primary" onclick="res.value+='.'">
+                <input type="button" value="=" class="btn btn-success" onclick="res.value=eval(res.value)">
+            </div>
+        </form>
+    </div>
+</div>
